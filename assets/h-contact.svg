@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 60" role="img" aria-label="Contact">
+<rect x="8" y="8" width="184" height="52" fill="#1B2127"/>
+<rect x="2" y="2" width="184" height="52" fill="#F1E7CF" stroke="#1B2127" stroke-width="4"/>
+<rect x="20" y="18" width="20" height="20" fill="#E2683C" stroke="#1B2127" stroke-width="3"/>
+<text x="54" y="36" font-family="'IBM Plex Mono','Courier New',ui-monospace,Menlo,Consolas,monospace" font-size="24" font-weight="700" fill="#1B2127" letter-spacing="1">CONTACT</text>
+</svg>

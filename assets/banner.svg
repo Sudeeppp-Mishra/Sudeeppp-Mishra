@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="Sudeep Mishra, Computer Engineering student building at the intersection of hardware logic and software craft">
+<defs>
+<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" fill-opacity=".10"/></pattern>
+<clipPath id="win"><rect x="43" y="88" width="1114" height="329"/></clipPath>
+<clipPath id="sun"><circle cx="960" cy="290" r="112"/></clipPath>
+</defs>
+<rect width="1200" height="460" fill="#242E35"/>
+<rect x="52" y="52" width="1120" height="380" fill="#12171B"/>
+<rect x="40" y="40" width="1120" height="380" fill="#F1E7CF" stroke="#1B2127" stroke-width="6"/>
+<rect x="43" y="43" width="1114" height="45" fill="#F1E7CF"/>
+<line x1="43" y1="88" x2="1157" y2="88" stroke="#1B2127" stroke-width="4"/>
+<rect x="62" y="54" width="24" height="24" fill="#F1E7CF" stroke="#1B2127" stroke-width="4"/>
+<rect x="1114" y="54" width="24" height="24" fill="#F1E7CF" stroke="#1B2127" stroke-width="4"/>
+<g stroke="#1B2127" stroke-width="3">
+<line x1="110" y1="55" x2="515" y2="55"/><line x1="110" y1="62" x2="515" y2="62"/><line x1="110" y1="69" x2="515" y2="69"/><line x1="110" y1="76" x2="515" y2="76"/>
+<line x1="685" y1="55" x2="1090" y2="55"/><line x1="685" y1="62" x2="1090" y2="62"/><line x1="685" y1="69" x2="1090" y2="69"/><line x1="685" y1="76" x2="1090" y2="76"/>
+</g>
+<text x="600" y="74" text-anchor="middle" font-family="'IBM Plex Mono','Courier New',ui-monospace,Menlo,Consolas,monospace" font-size="24" font-weight="700" fill="#1B2127">SUDEEP.OS</text>
+<g clip-path="url(#win)">
+<rect x="43" y="88" width="1114" height="102" fill="#F6D9A0"/>
+<rect x="43" y="190" width="1114" height="60" fill="#F3C98F"/>
+<rect x="43" y="250" width="1114" height="167" fill="#EFB57C"/>
+<g fill="#FFF4D6"><rect x="690" y="120" width="6" height="6"/><rect x="760" y="150" width="6" height="6"/><rect x="1090" y="128" width="6" height="6"/><rect x="1030" y="112" width="6" height="6"/><rect x="560" y="108" width="6" height="6"/></g>
+<circle cx="960" cy="290" r="112" fill="#E2683C"/>
+<g clip-path="url(#sun)" fill="#EFB57C">
+<rect x="840" y="262" width="240" height="5"/><rect x="840" y="280" width="240" height="8"/><rect x="840" y="300" width="240" height="11"/><rect x="840" y="322" width="240" height="14"/>
+</g>
+<path d="M43 336 C200 300 330 312 470 336 C600 358 700 318 840 326 C980 334 1070 302 1157 322 L1157 417 L43 417 Z" fill="#D9A566"/>
+<path d="M43 368 C180 342 300 360 440 372 C580 384 700 350 860 360 C990 368 1080 344 1157 356 L1157 417 L43 417 Z" fill="#C2703D"/>
+<path d="M43 396 C220 378 340 394 520 398 C700 402 820 378 980 388 C1060 393 1110 384 1157 388 L1157 417 L43 417 Z" fill="#7A3E2F"/>
+<text x="92" y="140" font-family="'IBM Plex Mono','Courier New',ui-monospace,Menlo,Consolas,monospace" font-size="24" fill="#7A3E2F">$ whoami</text>
+<rect x="214" y="121" width="14" height="25" fill="#7A3E2F"/>
+<text x="92" y="214" font-family="'IBM Plex Mono','Courier New',ui-monospace,Menlo,Consolas,monospace" font-size="64" font-weight="700" fill="#1B2127">SUDEEP MISHRA</text>
+<text x="92" y="262" font-family="'IBM Plex Mono','Courier New',ui-monospace,Menlo,Consolas,monospace" font-size="24" fill="#1B2127">Computer Engineering student building at the</text>
+<text x="92" y="294" font-family="'IBM Plex Mono','Courier New',ui-monospace,Menlo,Consolas,monospace" font-size="24" fill="#1B2127">intersection of hardware logic and software craft.</text>
+</g>
+<rect width="1200" height="460" fill="url(#scan)"/>
+</svg>
