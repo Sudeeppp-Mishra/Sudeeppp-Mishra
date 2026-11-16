@@ -3,9 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://mishra-sudeep.com.np"><img src="./assets/icon-portfolio.svg" height="90" alt="Portfolio" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/sudeeppp-mishra"><img src="./assets/icon-linkedin.svg" height="90" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/Sudeeppp-Mishra"><img src="./assets/icon-github.svg" height="90" alt="GitHub" /></a>
+  <a href="https://mishra-sudeep.com.np"><img src="./assets/icon-portfolio.svg" height="92" alt="Portfolio" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/sudeeppp-mishra"><img src="./assets/icon-linkedin.svg" height="92" alt="LinkedIn" /></a>
 </p>
 
 <p align="center">

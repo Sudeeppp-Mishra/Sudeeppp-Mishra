@@ -15,10 +15,11 @@
       }
       .icon-sub {
         font-family: 'IBM Plex Mono', 'Courier New', monospace;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 600;
-        fill: #1B2127;
+        fill: #E2683C;
         text-anchor: middle;
+        letter-spacing: 0.5px;
       }
       .shadow { fill: #12171B; }
       svg { cursor: pointer; }
@@ -31,7 +32,7 @@
     <!-- Drop Shadow of Icon -->
     <rect x="62" y="16" width="44" height="40" rx="3" class="shadow"/>
     
-    <!-- Retro Pixel Briefcase / ID Card (like Experience in SS) -->
+    <!-- Retro Pixel Briefcase / ID Card -->
     <rect x="58" y="14" width="44" height="38" rx="3" fill="#C2703D" stroke="#12171B" stroke-width="3"/>
     
     <!-- Briefcase Handle -->
@@ -47,6 +48,6 @@
 
   <!-- Title with Outline Font from Screenshot -->
   <text x="80" y="74" class="icon-label">LinkedIn</text>
-  <!-- Sub-label -->
-  <text x="80" y="92" class="icon-sub">in/sudeeppp</text>
+  <!-- Matching Orange Sub-label -->
+  <text x="80" y="93" class="icon-sub">in/sudeeppp</text>
 </svg>

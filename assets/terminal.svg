@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Terminal output showing Sudeep Mishra's details">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 410" role="img" aria-label="Terminal output showing Sudeep Mishra's details">
 <defs>
   <style>
     @keyframes termBlink {
@@ -26,12 +26,12 @@
   <pattern id="term-scan" width="4" height="4" patternUnits="userSpaceOnUse">
     <rect width="4" height="2" fill="#000" fill-opacity=".18"/>
   </pattern>
-  <clipPath id="term-body"><rect x="43" y="78" width="1114" height="322" rx="2"/></clipPath>
+  <clipPath id="term-body"><rect x="43" y="78" width="1114" height="292" rx="2"/></clipPath>
 </defs>
 
 <!-- Outer Window Drop-Shadow -->
-<rect x="52" y="42" width="1120" height="368" fill="#12171B"/>
-<rect x="40" y="30" width="1120" height="370" fill="#F1E7CF" stroke="#1B2127" stroke-width="6"/>
+<rect x="52" y="42" width="1120" height="338" fill="#12171B"/>
+<rect x="40" y="30" width="1120" height="340" fill="#F1E7CF" stroke="#1B2127" stroke-width="6"/>
 
 <!-- Window Titlebar with about.txt and Clean Stripes -->
 <rect x="43" y="33" width="1114" height="45" fill="#F1E7CF"/>
@@ -48,7 +48,7 @@
 <!-- Terminal CRT Body -->
 <g clip-path="url(#term-body)">
   <!-- Deep Retro CRT Background -->
-  <rect x="43" y="78" width="1114" height="322" fill="#11161B"/>
+  <rect x="43" y="78" width="1114" height="292" fill="#11161B"/>
 
   <!-- Command 1: about.txt -->
   <g transform="translate(80, 122)">
@@ -83,19 +83,14 @@
     <text x="140" class="t-dim">:</text>
     <text x="170" class="t-val">linkedin.com/in/sudeeppp-mishra</text>
   </g>
-  <g transform="translate(100, 340)">
-    <text class="t-key">github</text>
-    <text x="140" class="t-dim">:</text>
-    <text x="170" class="t-val">@Sudeeppp-Mishra</text>
-  </g>
 
   <!-- Next Prompt Line with Blinking Phosphor Cursor -->
-  <g transform="translate(80, 382)">
+  <g transform="translate(80, 350)">
     <text class="t-cmd">sudeep@mishra ~ % </text>
     <rect class="term-cursor" x="210" y="-18" width="12" height="22" fill="#E2683C"/>
   </g>
 
   <!-- CRT Scanlines Texture -->
-  <rect class="crt-lines" x="43" y="78" width="1114" height="322" fill="url(#term-scan)" pointer-events="none"/>
+  <rect class="crt-lines" x="43" y="78" width="1114" height="292" fill="url(#term-scan)" pointer-events="none"/>
 </g>
 </svg>
