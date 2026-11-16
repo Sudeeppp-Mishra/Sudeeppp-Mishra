@@ -1,3 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" preserveAspectRatio="none" role="presentation" aria-hidden="true">
-<rect width="1200" height="6" fill="#E2683C"/><rect y="6" width="1200" height="6" fill="#D9A566"/><rect y="12" width="1200" height="6" fill="#C2703D"/><rect y="18" width="1200" height="6" fill="#7A3E2F"/>
+  <defs>
+    <style>
+      @keyframes shimmer {
+        0% { opacity: 0.85; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px rgba(226, 104, 60, 0.6)); }
+        100% { opacity: 0.85; }
+      }
+      .div-glow {
+        animation: shimmer 3s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+  <g class="div-glow">
+    <rect width="1200" height="6" fill="#E2683C"/>
+    <rect y="6" width="1200" height="6" fill="#D9A566"/>
+    <rect y="12" width="1200" height="6" fill="#C2703D"/>
+    <rect y="18" width="1200" height="6" fill="#7A3E2F"/>
+  </g>
 </svg>

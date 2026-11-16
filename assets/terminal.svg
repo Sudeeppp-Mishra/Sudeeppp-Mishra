@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Terminal output showing Sudeep Mishra's details">
+<defs>
+  <style>
+    @keyframes termBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes lineFade {
+      from { opacity: 0; transform: translateX(-4px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes crtScan {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(6px); }
+    }
+    @keyframes ledGreen {
+      0%, 100% { fill: #39D353; filter: drop-shadow(0 0 3px #39D353); }
+      50% { fill: #238636; filter: none; }
+    }
+    .term-cursor {
+      animation: termBlink 0.85s infinite steps(1);
+    }
+    .crt-lines {
+      animation: crtScan 1.2s infinite linear;
+    }
+    .led-pulse {
+      animation: ledGreen 2.5s infinite ease-in-out;
+    }
+    .t-cmd  { font-family: 'IBM Plex Mono','Courier New',monospace; font-size: 19px; font-weight: 700; fill: #D9A566; }
+    .t-key  { font-family: 'IBM Plex Mono','Courier New',monospace; font-size: 18px; font-weight: 600; fill: #EFB57C; }
+    .t-val  { font-family: 'IBM Plex Mono','Courier New',monospace; font-size: 18px; font-weight: 500; fill: #F1E7CF; }
+    .t-link { font-family: 'IBM Plex Mono','Courier New',monospace; font-size: 18px; font-weight: 500; fill: #64B5F6; }
+    .t-dim  { font-family: 'IBM Plex Mono','Courier New',monospace; font-size: 18px; fill: #8B949E; }
+  </style>
+
+  <pattern id="term-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="2" fill="#000" fill-opacity=".18"/>
+  </pattern>
+  <clipPath id="term-body"><rect x="43" y="78" width="1114" height="322" rx="2"/></clipPath>
+</defs>
+
+<!-- Outer Window Drop-Shadow -->
+<rect x="52" y="42" width="1120" height="368" fill="#12171B"/>
+<rect x="40" y="30" width="1120" height="370" fill="#F1E7CF" stroke="#1B2127" stroke-width="6"/>
+
+<!-- Window Titlebar -->
+<rect x="43" y="33" width="1114" height="45" fill="#F1E7CF"/>
+<line x1="43" y1="78" x2="1157" y2="78" stroke="#1B2127" stroke-width="4"/>
+
+<!-- Titlebar Widgets (Retro Mac/NeXT style) -->
+<rect x="62" y="44" width="22" height="22" fill="#F1E7CF" stroke="#1B2127" stroke-width="3"/>
+<line x1="68" y1="55" x2="78" y2="55" stroke="#1B2127" stroke-width="3"/>
+
+<rect x="94" y="44" width="22" height="22" fill="#F1E7CF" stroke="#1B2127" stroke-width="3"/>
+<rect x="100" y="50" width="10" height="10" fill="#F1E7CF" stroke="#1B2127" stroke-width="2"/>
+
+<!-- Stripes in Titlebar -->
+<g stroke="#1B2127" stroke-width="2.5">
+  <line x1="130" y1="46" x2="380" y2="46"/><line x1="130" y1="52" x2="380" y2="52"/><line x1="130" y1="58" x2="380" y2="58"/><line x1="130" y1="64" x2="380" y2="64"/>
+  <line x1="820" y1="46" x2="1070" y2="46"/><line x1="820" y1="52" x2="1070" y2="52"/><line x1="820" y1="58" x2="1070" y2="58"/><line x1="820" y1="64" x2="1070" y2="64"/>
+</g>
+
+<!-- Center Title -->
+<text x="600" y="62" text-anchor="middle" font-family="'IBM Plex Mono','Courier New',monospace" font-size="18" font-weight="700" fill="#1B2127" letter-spacing="1">terminal — sudeep@mishra: ~ (tty1)</text>
+
+<!-- Close Widget on Right -->
+<rect x="1114" y="44" width="22" height="22" fill="#F1E7CF" stroke="#1B2127" stroke-width="3"/>
+<line x1="1119" y1="49" x2="1131" y2="61" stroke="#1B2127" stroke-width="3"/>
+<line x1="1131" y1="49" x2="1119" y2="61" stroke="#1B2127" stroke-width="3"/>
+
+<!-- Terminal CRT Body -->
+<g clip-path="url(#term-body)">
+  <!-- Deep Retro CRT Background -->
+  <rect x="43" y="78" width="1114" height="322" fill="#11161B"/>
+
+  <!-- Command 1: about.txt -->
+  <g transform="translate(80, 122)">
+    <text class="t-cmd">sudeep@mishra ~ % <tspan fill="#F1E7CF">cat about.txt</tspan></text>
+  </g>
+
+  <!-- Output 1 -->
+  <g transform="translate(100, 158)">
+    <text class="t-key">name</text>
+    <text x="140" class="t-dim">:</text>
+    <text x="170" class="t-val">Sudeep Mishra</text>
+  </g>
+  <g transform="translate(100, 190)">
+    <text class="t-key">studying</text>
+    <text x="140" class="t-dim">:</text>
+    <text x="170" class="t-val">Computer Engineering</text>
+  </g>
+
+  <!-- Command 2: contact.txt -->
+  <g transform="translate(80, 240)">
+    <text class="t-cmd">sudeep@mishra ~ % <tspan fill="#F1E7CF">cat contact.txt</tspan></text>
+  </g>
+
+  <!-- Output 2 -->
+  <g transform="translate(100, 276)">
+    <text class="t-key">web</text>
+    <text x="140" class="t-dim">:</text>
+    <text x="170" class="t-link">https://mishra-sudeep.com.np</text>
+  </g>
+  <g transform="translate(100, 308)">
+    <text class="t-key">linkedin</text>
+    <text x="140" class="t-dim">:</text>
+    <text x="170" class="t-val">linkedin.com/in/sudeeppp-mishra</text>
+  </g>
+  <g transform="translate(100, 340)">
+    <text class="t-key">github</text>
+    <text x="140" class="t-dim">:</text>
+    <text x="170" class="t-val">@Sudeeppp-Mishra</text>
+  </g>
+
+  <!-- Next Prompt Line with Blinking Phosphor Cursor -->
+  <g transform="translate(80, 382)">
+    <text class="t-cmd">sudeep@mishra ~ % </text>
+    <rect class="term-cursor" x="210" y="-18" width="12" height="22" fill="#E2683C"/>
+  </g>
+
+  <!-- CRT Scanlines Texture -->
+  <rect class="crt-lines" x="43" y="78" width="1114" height="322" fill="url(#term-scan)" pointer-events="none"/>
+</g>
+</svg>
