@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110" role="img" aria-label="LinkedIn">
   <defs>
     <style>
+      @keyframes badgeShimmer {
+        0%, 100% { filter: drop-shadow(0 0 1px #D9A566); }
+        50% { filter: drop-shadow(0 0 3px #FFF4D6); }
+      }
       .icon-label {
         font-family: 'Silkscreen', 'Press Start 2P', 'VT323', ui-monospace, monospace;
         font-size: 13px;
@@ -23,8 +27,9 @@
       }
       .shadow { fill: #7A3E2F; }
       svg { cursor: pointer; }
-      svg:hover .icon-body { transform: translateY(-3px); }
-      .icon-body { transition: transform 0.15s ease-out; }
+      svg:hover .icon-body { transform: translateY(-4px); }
+      .icon-body { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+      .clasp-glow { animation: badgeShimmer 3s infinite ease-in-out; }
     </style>
   </defs>
 
@@ -38,9 +43,9 @@
     <!-- Briefcase Handle -->
     <rect x="82" y="9" width="16" height="7" rx="2" fill="#F1E7CF" stroke="#12171B" stroke-width="2.5"/>
     
-    <!-- Metal Band & Clasp -->
+    <!-- Metal Band & Clasp with Shimmer -->
     <rect x="68" y="28" width="44" height="6" fill="#D9A566" stroke="#12171B" stroke-width="2"/>
-    <rect x="86" y="26" width="8" height="10" fill="#F1E7CF" stroke="#12171B" stroke-width="2"/>
+    <rect class="clasp-glow" x="86" y="26" width="8" height="10" fill="#F1E7CF" stroke="#12171B" stroke-width="2"/>
     
     <!-- in tag -->
     <text x="90" y="46" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="900" fill="#F1E7CF" text-anchor="middle">in</text>
