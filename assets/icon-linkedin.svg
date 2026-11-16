@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110" role="img" aria-label="LinkedIn">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110" role="img" aria-label="LinkedIn">
   <defs>
     <style>
       .icon-label {
@@ -15,13 +15,13 @@
       }
       .icon-sub {
         font-family: 'IBM Plex Mono', 'Courier New', monospace;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
         fill: #E2683C;
         text-anchor: middle;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.2px;
       }
-      .shadow { fill: #12171B; }
+      .shadow { fill: #7A3E2F; }
       svg { cursor: pointer; }
       svg:hover .icon-body { transform: translateY(-3px); }
       .icon-body { transition: transform 0.15s ease-out; }
@@ -29,25 +29,25 @@
   </defs>
 
   <g class="icon-body">
-    <!-- Drop Shadow of Icon -->
-    <rect x="62" y="16" width="44" height="40" rx="3" class="shadow"/>
+    <!-- Drop Shadow of Icon (Rust Brown) -->
+    <rect x="72" y="16" width="44" height="40" rx="3" class="shadow"/>
     
     <!-- Retro Pixel Briefcase / ID Card -->
-    <rect x="58" y="14" width="44" height="38" rx="3" fill="#C2703D" stroke="#12171B" stroke-width="3"/>
+    <rect x="68" y="14" width="44" height="38" rx="3" fill="#C2703D" stroke="#12171B" stroke-width="3"/>
     
     <!-- Briefcase Handle -->
-    <rect x="72" y="9" width="16" height="7" rx="2" fill="#F1E7CF" stroke="#12171B" stroke-width="2.5"/>
+    <rect x="82" y="9" width="16" height="7" rx="2" fill="#F1E7CF" stroke="#12171B" stroke-width="2.5"/>
     
     <!-- Metal Band & Clasp -->
-    <rect x="58" y="28" width="44" height="6" fill="#D9A566" stroke="#12171B" stroke-width="2"/>
-    <rect x="76" y="26" width="8" height="10" fill="#F1E7CF" stroke="#12171B" stroke-width="2"/>
+    <rect x="68" y="28" width="44" height="6" fill="#D9A566" stroke="#12171B" stroke-width="2"/>
+    <rect x="86" y="26" width="8" height="10" fill="#F1E7CF" stroke="#12171B" stroke-width="2"/>
     
-    <!-- Small in tag -->
-    <text x="80" y="46" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="900" fill="#F1E7CF" text-anchor="middle">in</text>
+    <!-- in tag -->
+    <text x="90" y="46" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="900" fill="#F1E7CF" text-anchor="middle">in</text>
   </g>
 
-  <!-- Title with Outline Font from Screenshot -->
-  <text x="80" y="74" class="icon-label">LinkedIn</text>
-  <!-- Matching Orange Sub-label -->
-  <text x="80" y="93" class="icon-sub">in/sudeeppp</text>
+  <!-- Title with Outline Font -->
+  <text x="90" y="74" class="icon-label">LinkedIn</text>
+  <!-- Matching Sub-label -->
+  <text x="90" y="93" class="icon-sub">in/sudeeppp-mishra</text>
 </svg>

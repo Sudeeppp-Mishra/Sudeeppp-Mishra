@@ -30,19 +30,20 @@
     .mono { font-family: 'IBM Plex Mono', 'Courier New', ui-monospace, Menlo, Consolas, monospace; }
   </style>
 
+  <!-- Subtler 4% Opacity Scanlines -->
   <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-    <rect width="4" height="2" fill="#000" fill-opacity=".11"/>
+    <rect width="4" height="2" fill="#000" fill-opacity=".04"/>
   </pattern>
   <clipPath id="win"><rect x="43" y="88" width="1114" height="329"/></clipPath>
-  <clipPath id="sun"><circle cx="960" cy="290" r="112"/></clipPath>
+  <clipPath id="sun"><circle cx="960" cy="310" r="112"/></clipPath>
 </defs>
 
-<!-- Outer Shadow & Bevel -->
-<rect width="1200" height="460" fill="#242E35"/>
-<rect x="52" y="52" width="1120" height="380" fill="#12171B"/>
+<!-- Outer Rust Brown Shadow (Transparent outer page background) -->
+<rect x="52" y="52" width="1120" height="380" fill="#7A3E2F" rx="2"/>
+<!-- Window Frame -->
 <rect x="40" y="40" width="1120" height="380" fill="#F1E7CF" stroke="#1B2127" stroke-width="6"/>
 
-<!-- Window Titlebar with SUDEEP.OS and Clean Stripes (No Fake Buttons) -->
+<!-- Window Titlebar with SUDEEP.OS and Clean Stripes -->
 <rect x="43" y="43" width="1114" height="45" fill="#F1E7CF"/>
 <line x1="43" y1="88" x2="1157" y2="88" stroke="#1B2127" stroke-width="4"/>
 
@@ -72,35 +73,35 @@
     <rect class="star-4" x="880" y="130" width="5" height="5"/>
   </g>
 
-  <!-- Animated Sun with Retro Scanline Cutouts -->
+  <!-- Animated Sun Setting Directly Behind Ridge -->
   <g class="sun-animated">
-    <circle cx="960" cy="290" r="112" fill="#E2683C"/>
+    <circle cx="960" cy="310" r="112" fill="#E2683C"/>
     <g clip-path="url(#sun)" fill="#EFB57C">
-      <rect x="840" y="262" width="240" height="5"/>
-      <rect x="840" y="280" width="240" height="8"/>
-      <rect x="840" y="300" width="240" height="11"/>
-      <rect x="840" y="322" width="240" height="14"/>
-      <rect x="840" y="348" width="240" height="18"/>
+      <rect x="840" y="270" width="240" height="5"/>
+      <rect x="840" y="286" width="240" height="7"/>
+      <rect x="840" y="304" width="240" height="10"/>
+      <rect x="840" y="324" width="240" height="13"/>
+      <rect x="840" y="347" width="240" height="16"/>
     </g>
   </g>
 
-  <!-- Rolling Dunes / Terrain -->
-  <path d="M43 336 C200 300 330 312 470 336 C600 358 700 318 840 326 C980 334 1070 302 1157 322 L1157 417 L43 417 Z" fill="#D9A566"/>
-  <path d="M43 368 C180 342 300 360 440 372 C580 384 700 350 860 360 C990 368 1080 344 1157 356 L1157 417 L43 417 Z" fill="#C2703D"/>
-  <path d="M43 396 C220 378 340 394 520 398 C700 402 820 378 980 388 C1060 393 1110 384 1157 388 L1157 417 L43 417 Z" fill="#7A3E2F"/>
+  <!-- Rolling Dunes / Terrain Overlapping the Setting Sun -->
+  <path d="M43 325 C200 295 330 305 470 325 C600 345 720 308 840 315 C960 322 1060 295 1157 312 L1157 417 L43 417 Z" fill="#D9A566"/>
+  <path d="M43 358 C180 334 300 350 440 362 C580 374 700 340 860 350 C990 358 1080 336 1157 348 L1157 417 L43 417 Z" fill="#C2703D"/>
+  <path d="M43 390 C220 372 340 388 520 392 C700 396 820 372 980 382 C1060 387 1110 378 1157 382 L1157 417 L43 417 Z" fill="#7A3E2F"/>
+
+  <!-- Subtle Scanline texture on backdrop only -->
+  <rect class="scanlines" x="43" y="88" width="1114" height="329" fill="url(#scan)" pointer-events="none"/>
 
   <!-- $ whoami Prompt with Blinking Cursor -->
   <text x="92" y="140" class="mono" font-size="24" font-weight="600" fill="#7A3E2F">$ whoami</text>
   <rect class="cursor-blink" x="214" y="121" width="14" height="24" fill="#7A3E2F"/>
 
-  <!-- SUDEEP MISHRA Title -->
+  <!-- SUDEEP MISHRA Title (Razor Sharp) -->
   <text x="92" y="214" class="mono" font-size="64" font-weight="700" fill="#1B2127" letter-spacing="-1">SUDEEP MISHRA</text>
 
   <!-- Subtitle -->
   <text x="92" y="262" class="mono" font-size="24" fill="#1B2127">Computer Engineering student building at the</text>
   <text x="92" y="294" class="mono" font-size="24" fill="#1B2127">intersection of hardware logic and software craft.</text>
 </g>
-
-<!-- CRT Scanlines Overlay -->
-<rect class="scanlines" width="1200" height="460" fill="url(#scan)" pointer-events="none"/>
 </svg>

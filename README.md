@@ -20,5 +20,5 @@
 </p>
 
 <p align="center">
-  <sub>^‿^ &nbsp; just passing through, hoping to leave a gentle trace... ;)</sub>
-</p>
+  <samp>^‿^ &nbsp; just passing through, hoping to leave a gentle trace... ;)</samp>
+</p> 
