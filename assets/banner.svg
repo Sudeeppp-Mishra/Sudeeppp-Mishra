@@ -1,31 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="Sudeep Mishra, Computer Engineering student building at the intersection of hardware logic and software craft">
 <defs>
   <style>
-    @keyframes blink {
-      0%, 49% { opacity: 1; }
-      50%, 100% { opacity: 0; }
+    @keyframes cursorPulse {
+      0%, 48% { opacity: 1; }
+      50%, 98% { opacity: 0; }
+      100% { opacity: 1; }
     }
     @keyframes starTwinkle {
-      0%, 100% { opacity: 0.25; transform: scale(0.85); }
-      50% { opacity: 1; transform: scale(1.3); }
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.35); }
     }
     @keyframes sunGlow {
-      0%, 100% { filter: drop-shadow(0 0 6px rgba(226, 104, 60, 0.4)); }
-      50% { filter: drop-shadow(0 0 16px rgba(243, 201, 143, 0.7)); }
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(226, 104, 60, 0.5)); }
+      50% { transform: scale(1.02); filter: drop-shadow(0 0 22px rgba(243, 201, 143, 0.85)); }
     }
     @keyframes scanScroll {
       0% { transform: translateY(0); }
       100% { transform: translateY(8px); }
     }
+    @keyframes shootingStar {
+      0% { transform: translate(480px, 95px); opacity: 0; }
+      2% { opacity: 1; }
+      12% { transform: translate(1050px, 145px); opacity: 0; }
+      100% { transform: translate(1050px, 145px); opacity: 0; }
+    }
     .cursor-blink {
-      animation: blink 0.9s infinite steps(1);
+      animation: cursorPulse 0.9s infinite steps(1);
     }
     .star-1 { animation: starTwinkle 2.2s infinite ease-in-out; transform-origin: 693px 123px; }
     .star-2 { animation: starTwinkle 3.1s infinite ease-in-out 0.7s; transform-origin: 763px 153px; }
     .star-3 { animation: starTwinkle 2.6s infinite ease-in-out 1.2s; transform-origin: 1093px 131px; }
     .star-4 { animation: starTwinkle 3.5s infinite ease-in-out 0.3s; transform-origin: 1033px 115px; }
     .star-5 { animation: starTwinkle 2.8s infinite ease-in-out 1.5s; transform-origin: 563px 111px; }
-    .sun-animated { animation: sunGlow 4s infinite ease-in-out; }
+    .star-6 { animation: starTwinkle 3.3s infinite ease-in-out 1.8s; transform-origin: 633px 163px; }
+    .star-7 { animation: starTwinkle 2.5s infinite ease-in-out 0.9s; transform-origin: 883px 133px; }
+    .sun-animated {
+      animation: sunGlow 4s infinite ease-in-out;
+      transform-origin: 960px 310px;
+    }
+    .shooting-pixel {
+      animation: shootingStar 8s infinite ease-in;
+    }
     .scanlines { animation: scanScroll 1.5s infinite linear; }
     .mono { font-family: 'IBM Plex Mono', 'Courier New', ui-monospace, Menlo, Consolas, monospace; }
   </style>
@@ -43,17 +58,16 @@
 <!-- Window Frame -->
 <rect x="40" y="40" width="1120" height="380" fill="#F1E7CF" stroke="#1B2127" stroke-width="6"/>
 
-<!-- Window Titlebar with SUDEEP.OS and Clean Stripes -->
+<!-- Clean Retro Hardware Top Bar (Continuous Ventilation Grill, No SUDEEP.OS, No Fake Buttons) -->
 <rect x="43" y="43" width="1114" height="45" fill="#F1E7CF"/>
 <line x1="43" y1="88" x2="1157" y2="88" stroke="#1B2127" stroke-width="4"/>
 
 <g stroke="#1B2127" stroke-width="3">
-  <line x1="60" y1="56" x2="490" y2="56"/><line x1="60" y1="63" x2="490" y2="63"/><line x1="60" y1="70" x2="490" y2="70"/><line x1="60" y1="77" x2="490" y2="77"/>
-  <line x1="710" y1="56" x2="1140" y2="56"/><line x1="710" y1="63" x2="1140" y2="63"/><line x1="710" y1="70" x2="1140" y2="70"/><line x1="710" y1="77" x2="1140" y2="77"/>
+  <line x1="60" y1="56" x2="1140" y2="56"/>
+  <line x1="60" y1="63" x2="1140" y2="63"/>
+  <line x1="60" y1="70" x2="1140" y2="70"/>
+  <line x1="60" y1="77" x2="1140" y2="77"/>
 </g>
-
-<!-- Window Title: SUDEEP.OS -->
-<text x="600" y="74" text-anchor="middle" class="mono" font-size="24" font-weight="700" fill="#1B2127" letter-spacing="2">SUDEEP.OS</text>
 
 <!-- Window Content Body -->
 <g clip-path="url(#win)">
@@ -69,11 +83,17 @@
     <rect class="star-3" x="1090" y="128" width="6" height="6"/>
     <rect class="star-4" x="1030" y="112" width="6" height="6"/>
     <rect class="star-5" x="560" y="108" width="6" height="6"/>
-    <rect class="star-2" x="630" y="160" width="4" height="4"/>
-    <rect class="star-4" x="880" y="130" width="5" height="5"/>
+    <rect class="star-6" x="630" y="160" width="5" height="5"/>
+    <rect class="star-7" x="880" y="130" width="5" height="5"/>
   </g>
 
-  <!-- Animated Sun Setting Directly Behind Ridge -->
+  <!-- Shooting Star Pixel Trail -->
+  <g class="shooting-pixel">
+    <line x1="0" y1="0" x2="-22" y2="-2" stroke="#FFF4D6" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <rect x="0" y="-1" width="4" height="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Animated Sun Setting Directly Behind Ridge with Ambient Pulse -->
   <g class="sun-animated">
     <circle cx="960" cy="310" r="112" fill="#E2683C"/>
     <g clip-path="url(#sun)" fill="#EFB57C">
@@ -93,11 +113,11 @@
   <!-- Subtle Scanline texture on backdrop only -->
   <rect class="scanlines" x="43" y="88" width="1114" height="329" fill="url(#scan)" pointer-events="none"/>
 
-  <!-- $ whoami Prompt with Blinking Cursor -->
+  <!-- $ whoami Prompt with Animated Blinking Cursor -->
   <text x="92" y="140" class="mono" font-size="24" font-weight="600" fill="#7A3E2F">$ whoami</text>
   <rect class="cursor-blink" x="214" y="121" width="14" height="24" fill="#7A3E2F"/>
 
-  <!-- SUDEEP MISHRA Title (Razor Sharp) -->
+  <!-- SUDEEP MISHRA Title -->
   <text x="92" y="214" class="mono" font-size="64" font-weight="700" fill="#1B2127" letter-spacing="-1">SUDEEP MISHRA</text>
 
   <!-- Subtitle -->
