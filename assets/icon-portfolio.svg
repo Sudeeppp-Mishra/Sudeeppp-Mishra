@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110" role="img" aria-label="Portfolio">
+  <defs>
+    <style>
+      .icon-label {
+        font-family: 'Silkscreen', 'Press Start 2P', 'VT323', ui-monospace, monospace;
+        font-size: 13px;
+        font-weight: 700;
+        fill: #FFFFFF;
+        stroke: #12171B;
+        stroke-width: 3.5px;
+        stroke-linejoin: round;
+        paint-order: stroke fill;
+        text-anchor: middle;
+        letter-spacing: 0.5px;
+      }
+      .icon-sub {
+        font-family: 'IBM Plex Mono', 'Courier New', monospace;
+        font-size: 11px;
+        font-weight: 600;
+        fill: #1B2127;
+        text-anchor: middle;
+      }
+      .shadow { fill: #12171B; }
+      .stroke-line { stroke: #12171B; stroke-width: 3; stroke-linecap: square; }
+      svg { cursor: pointer; }
+      svg:hover .icon-body { transform: translateY(-3px); }
+      .icon-body { transition: transform 0.15s ease-out; }
+    </style>
+  </defs>
+
+  <g class="icon-body">
+    <!-- Drop Shadow of Icon -->
+    <rect x="62" y="16" width="44" height="40" rx="3" class="shadow"/>
+    
+    <!-- Retro Pixel Globe / Web Monitor Base -->
+    <rect x="58" y="12" width="44" height="38" rx="3" fill="#F1E7CF" stroke="#12171B" stroke-width="3"/>
+    
+    <!-- Screen / Globe Grid -->
+    <rect x="63" y="17" width="34" height="28" fill="#E2683C"/>
+    
+    <!-- Pixel Globe Lines inside -->
+    <circle cx="80" cy="31" r="10" fill="#D9A566" stroke="#12171B" stroke-width="2"/>
+    <ellipse cx="80" cy="31" rx="4" ry="10" fill="none" stroke="#12171B" stroke-width="1.8"/>
+    <line x1="70" y1="31" x2="90" y2="31" stroke="#12171B" stroke-width="1.8"/>
+    <rect x="74" y="46" width="12" height="4" fill="#D9A566" stroke="#12171B" stroke-width="2"/>
+  </g>
+
+  <!-- Title with Outline Font from Screenshot -->
+  <text x="80" y="74" class="icon-label">Portfolio</text>
+  <!-- Sub-label -->
+  <text x="80" y="92" class="icon-sub">web.app</text>
+</svg>

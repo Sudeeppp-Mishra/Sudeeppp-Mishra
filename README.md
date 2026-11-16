@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://mishra-sudeep.com.np"><img src="./assets/btn-portfolio.svg" height="40" alt="Portfolio" /></a>&nbsp;
-  <a href="https://www.linkedin.com/in/sudeeppp-mishra"><img src="./assets/btn-linkedin.svg" height="40" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/Sudeeppp-Mishra"><img src="./assets/btn-github.svg" height="40" alt="GitHub" /></a>
+  <a href="https://mishra-sudeep.com.np"><img src="./assets/icon-portfolio.svg" height="90" alt="Portfolio" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/sudeeppp-mishra"><img src="./assets/icon-linkedin.svg" height="90" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Sudeeppp-Mishra"><img src="./assets/icon-github.svg" height="90" alt="GitHub" /></a>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/terminal.svg" width="100%" alt="Sudeep Mishra's Terminal" />
+  <img src="./assets/terminal.svg" width="100%" alt="about.txt" />
 </p>
 
 <p align="center">
@@ -21,5 +21,5 @@
 </p>
 
 <p align="center">
-  <sub><code>[TTY1 ACTIVE]</code> &nbsp;•&nbsp; ^‿^ &nbsp; just passing through, hoping to leave a gentle trace... ;)</sub>
+  <sub>^‿^ &nbsp; just passing through, hoping to leave a gentle trace... ;)</sub>
 </p>
